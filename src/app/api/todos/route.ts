@@ -2,13 +2,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { MongoClient, ObjectId } from "mongodb";
 
-const MONGODB_URI = process.env.NEXT_PUBLIC_MONGODB_URI;
+const MONGODB_URL = process.env.NEXT_PUBLIC_MONGODB_URL;
 
-if (!MONGODB_URI) {
-  throw new Error("MONGODB_URI is not set");
+if (!MONGODB_URL) {
+  throw new Error("MONGODB_URL is not set");
 }
 
-const client = new MongoClient(MONGODB_URI);
+const client = new MongoClient(MONGODB_URL);
 
 export async function GET() {
   try {
