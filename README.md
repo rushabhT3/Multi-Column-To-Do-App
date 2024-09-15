@@ -8,9 +8,9 @@ This is a project bootstrapped with [`create-next-app`](https://nextjs.org/docs/
 
 To connect to your MongoDB database, create a .env.local file in the root of your project with the following variable:
 ```bash
-NEXT_PUBLIC_MONGODB_URI = <your-mongodb-uri>
+NEXT_PUBLIC_MONGODB_URL = <your-mongodb-url>
 ```
-Replace `<your-mongodb-uri>` with your actual MongoDB connection string.
+Replace `<your-mongodb-url>` with your actual MongoDB connection string.
 
 ## Getting Started
 
